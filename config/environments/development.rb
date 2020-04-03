@@ -11,6 +11,9 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+  
+  #Whitelist requests from development hostname:
+  config.hosts << "ae5aa66877454319a07d8b0b6ffbb8f0.vfs.cloud9.us-west-2.amazonaws.com"
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
